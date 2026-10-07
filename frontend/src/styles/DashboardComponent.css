@@ -1,0 +1,107 @@
+/* src/styles/DashboardPage.css */
+/* At the top of your CSS file, define the @font-face */
+@font-face {
+    font-family: 'The Seasons';
+    src: url('../assets/Fontspring-DEMO-theseasons-ltit.otf') format('truetype'); /* Adjust the path as necessary */
+    font-weight: normal;
+    font-style: bold;
+}
+
+/* Apply the font to specific elements */
+.dashboard-content h1, .dashboard-content h2, .dashboard-content p {
+    font-family: 'The Seasons', sans-serif; /* Fallback to sans-serif if the font fails to load */
+    color: black;
+    
+}
+.dashboard-page {
+    background-image: url('../assets/background.jpeg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dashboard-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: teal; /* Teal color, adjust as needed */
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto; /* Maintain aspect ratio */
+    height: 40px; /* Fixed height for uniformity */
+    margin-right: 20px; /* Space after the logo */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align links to the right */
+    flex-grow: 1; /* Fill available horizontal space */
+}
+
+.nav-link {
+    margin-left: 15px; /* Space between navigation links */
+    text-decoration: none;
+    font-weight: bold;
+    color: white; /* Contrast with the background */
+    position: relative;
+    font-size: 0.9em; /* Slightly reduced font size */
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white; /* Underline effect */
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Full underline on hover */
+}
+
+.dashboard-content {
+    padding: 50px;
+    text-align: center;
+    color: #333;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.stat p {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4500; /* Bold color for statistics */
+}

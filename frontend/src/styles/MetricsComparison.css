@@ -1,0 +1,20 @@
+.metrics-comparison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.metrics-comparison select {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.metrics-comparison h1, .metrics-comparison h2 {
+    text-align: center;
+}
+
+.metrics-comparison div {
+    margin-top: 20px;
+}

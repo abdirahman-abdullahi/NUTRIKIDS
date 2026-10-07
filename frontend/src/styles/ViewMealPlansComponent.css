@@ -1,0 +1,105 @@
+.view-meal-plans-container {
+    position: relative;
+    background-image: url('../assets/logo.jpeg'); /* Adjust the path as necessary */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.body, .html {
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: teal; /* Teal color for consistency */
+    height: 60px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures the navbar stretches across the full width of the viewport */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.nav-link {
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width .3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.view-meal-plans {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; /* Center the meal plan display */
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+label {
+    font-weight: bold;
+}
